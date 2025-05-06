@@ -1,0 +1,20 @@
+def chatbot():
+    print("Welcome to SmartBot! How can I help you today?")
+    while True:
+        user_input = input("You: ").lower()
+
+        if "hello" in user_input or "hi" in user_input:
+            print("Bot: Hello! How can I assist you?")
+        elif "price" in user_input:
+            print("Bot: Our product prices start from ₹499. Would you like details?")
+        elif "order status" in user_input or "track" in user_input:
+            print("Bot: Please share your order ID to track the status.")
+        elif "return" in user_input or "refund" in user_input:
+            print("Bot: You can initiate a return within 7 days of delivery.")
+        elif "bye" in user_input or "exit" in user_input:
+            print("Bot: Thank you for chatting! Have a great day.")
+            break
+        else:
+            print("Bot: I'm sorry, I didn't understand that. Can you please rephrase?")
+
+chatbot()
